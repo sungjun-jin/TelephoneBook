@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TelephoneBook</string>
+    <string name="btn_call">Call</string>
+</resources>
