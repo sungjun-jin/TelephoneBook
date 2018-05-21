@@ -32,7 +32,8 @@ public class PhoneDAO {
         };
 
         //4. 쿼리 단위로 데이터를 받는다
-        Cursor cursor = resolver.query(uri,projections,null,null,null);
+        String order = projections[1] + " ASC"; //이름순 정렬 ASC - 오름차순 DESC - 내림차순
+        Cursor cursor = resolver.query(uri,projections,null,null,order);
 
         //5. 쿼리에 담긴 데이터를 반복문을 통해 꺼낸다
 
